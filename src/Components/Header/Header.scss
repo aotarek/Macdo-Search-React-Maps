@@ -1,0 +1,21 @@
+.header {
+  background: #ffb61f;
+  border-bottom: 4px solid #db0007;
+
+  &__content {
+    padding: 20px 0;
+    &--logo {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+    }
+    &--title {
+      margin-left: 10px;
+      display: inline-block;
+
+      color: #db0007;
+      text-transform: capitalize;
+      vertical-align: bottom;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Pagination from 'react-js-pagination';
 import RestaurantSearch from '../../Components/RestaurantSearch/RestaurantSearch';
 import RestaurantItem from '../../Components/RestaurantItem/RestaurantItem';
 import RestaurantMap from '../../Components/RestaurantMap/RestaurantMap';
+import Spinner from '../../Components/Spinner/Spinner'
 
 import emtyImg from '../../assets/images/empty.png';
 
@@ -90,7 +91,7 @@ class Restaurant extends Component {
     const { filtredData, loading, data } = this.state;
 
     if (loading) {
-      return <div className="lds-hourglass"></div>;
+      return <Spinner/>;
     }
     if (data !== null && data.length <= 0) {
       return (
